@@ -31,6 +31,7 @@ end
 def reverse_string(str)
   new_array = []
   formatted_string = str.chars
+  
   until formatted_string.empty?
     new_array << formatted_string.pop 
   end
