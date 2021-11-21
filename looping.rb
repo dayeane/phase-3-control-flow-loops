@@ -29,7 +29,11 @@ def fizzbuzz_printer
 end
 
 def reverse_string(str)
- str.each_char do |l|
-   puts l
- end
+  new_array = []
+  formatted_string = str.chars
+  until formatted_string.empty?
+    new_array << formatted_string.pop 
+  end
+  
+  new_array.join
 end
